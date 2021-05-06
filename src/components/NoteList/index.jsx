@@ -22,10 +22,10 @@ const NoteList = (props) => {
     return (
 
         <div>
-            <button className="btn btn-danger w-75 mb-5">Ajouter une note</button>
+            <button className="btn btn-danger w-75 mb-3">Ajouter une note</button>
             {keys.map((key, index) =>
                 <div key={index}>
-                    <h1>{key}</h1>
+                    <h4>{key}</h4>
                     <p>{localStorage.getItem(key)}</p>
                 </div>)}
 

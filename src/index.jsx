@@ -22,7 +22,10 @@ const App = () => {
 
     const handleSave = () => {
         localStorage.setItem(title, content);
+        document.location.reload();
     }
+
+
 
 
     return (
